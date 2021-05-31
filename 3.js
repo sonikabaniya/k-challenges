@@ -4,9 +4,9 @@ var x=y=0;
 function distanceFromOrigin(command){
 
     for(i=0; i< command.length; i++){
-        // if command is F change x coordinate by 1 unit
+        // if command is F change y coordinate by 1 unit
         if(command[i] == "F"){
-            x+=1
+            y+=1
         }
         // if command is rotate swap coordinate of x and y
         if(command[i] = "R"){
@@ -23,6 +23,7 @@ function distanceFromOrigin(command){
 
 }
 
+// calculate all the possible sequence of action here
 function combine(str){
     const result = [];
     for(let i = 1; i < Math.pow(2, str.length) - 1; i++)

@@ -31,5 +31,5 @@ function getAllSubstrings(str) {
     }
   }
 
-  console.log("The longest palindrome substring is " + longestPalindromeString)
+  console.log("The longest palindrome substring of string " + theString+" is " + longestPalindromeString)
 
